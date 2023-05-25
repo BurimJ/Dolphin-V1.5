@@ -7,10 +7,7 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap" rel="stylesheet" />
     <!-- Link CSS -->
     <link rel="stylesheet" href="app/style/global.css" />
     <link rel="stylesheet" href="app/style/login.css" />
@@ -29,39 +26,23 @@
             <div class="sidebar__container-top-logo">
               <img src="app/img/logo.png" alt="" class="sidebar__logo" />
             </div>
-            <button
-              onclick="window.location.href='home.html'"
-              id="home"
-              class="btn btn-sidebar"
-            >
+            <button onclick="window.location.href='home.html'" id="home" class="btn btn-sidebar">
               <ion-icon name="rocket-outline" class="btn-icon"></ion-icon>
               Home
             </button>
-            <button
-              onclick="window.location.href='members.html'"
-              class="btn btn-sidebar"
-            >
+            <button onclick="window.location.href='members.html'" class="btn btn-sidebar">
               <ion-icon name="newspaper-outline" class="btn-icon"></ion-icon>
               Members
             </button>
-            <button
-              onclick="window.location.href='competitors.html'"
-              class="btn btn-sidebar"
-            >
+            <button onclick="window.location.href='competitors.html'" class="btn btn-sidebar">
               <ion-icon name="people-outline" class="btn-icon"></ion-icon>
               Competitors
             </button>
-            <button
-              onclick="window.location.href='payments.html'"
-              class="btn btn-sidebar"
-            >
+            <button onclick="window.location.href='payments.html'" class="btn btn-sidebar">
               <ion-icon name="storefront-outline" class="btn-icon"></ion-icon>
               Payments
             </button>
-            <button
-              onclick="window.location.href='times.html'"
-              class="btn btn-sidebar"
-            >
+            <button onclick="window.location.href='times.html'" class="btn btn-sidebar">
               <ion-icon name="ticket-outline" class="btn-icon"></ion-icon>
               Times
             </button>
@@ -91,18 +72,7 @@
               <ion-icon name="add-circle-outline" class="btn-icon"></ion-icon>
               Member
             </button>
-            <button class="btn btn-home zero">
-              <ion-icon name="add-circle-outline" class="btn-icon"></ion-icon>
-              Competitors
-            </button>
-            <button class="btn btn-home zero">
-              <ion-icon name="add-circle-outline" class="btn-icon"></ion-icon>
-              Time
-            </button>
-            <ion-icon
-              name="notifications-outline"
-              class="btn-icon btn-bell"
-            ></ion-icon>
+            <ion-icon name="notifications-outline" class="btn-icon btn-bell"></ion-icon>
             <img src="app/img/user-picture.png" alt="" class="user-picture" />
           </div>
         </div>
@@ -115,10 +85,7 @@
     <dialog id="dialog-for-member">
       <form id="form-for-member">
         <h3>Add member</h3>
-        <p id="obs-m">
-          If you are a competitor, please use the "add competitor" button
-          instead.
-        </p>
+        <p id="obs-m">If you are a competitor, please use the "add competitor" button instead.</p>
         <section id="personal-information-m">
           <label>First Name <input type="text" id="memberFirstName" /></label>
           <label>Last Name <input type="text" id="memberLastName" /></label>
@@ -133,9 +100,7 @@
               <option>Senior</option>
             </select>
           </label>
-          <p id="payment-info-m">
-            Casual swimming only allowed outside practice times.
-          </p>
+          <p id="payment-info-m">Casual swimming only allowed outside practice times.</p>
           <label
             >My payment method
             <select id="memberPayment">
@@ -146,13 +111,7 @@
           </label>
         </section>
         <section class="buttons">
-          <input
-            type="submit"
-            name="btn__style"
-            id="btn__style"
-            class="btn__style"
-            value="Add Member"
-          />
+          <input type="submit" name="btn__style" id="btn__style" class="btn__style" value="Add Member" />
           <button class="btn__style">Reset</button>
           <button class="btn__style">Close</button>
         </section>
@@ -164,21 +123,12 @@
     <dialog id="dialog-update-member">
       <form id="form-update-member">
         <h3>Update member</h3>
-        <p id="obs-m-u">
-          If you are a competitor, please use the "add competitor" button
-          instead.
-        </p>
+        <p id="obs-m-u">If you are a competitor, please use the "add competitor" button instead.</p>
         <section id="personal-information-m-u">
-          <label
-            >First Name <input type="text" id="memberUpdateFirstName"
-          /></label>
-          <label
-            >Last Name <input type="text" id="memberUpdateLastName"
-          /></label>
+          <label>First Name <input type="text" id="memberUpdateFirstName" /></label>
+          <label>Last Name <input type="text" id="memberUpdateLastName" /></label>
           <label>Age <input type="number" id="memberUpdateAge" /></label>
-          <label
-            >Birthdate <input type="date" id="memberUpdateBirthdate"
-          /></label>
+          <label>Birthdate <input type="date" id="memberUpdateBirthdate" /></label>
         </section>
         <section id="club-information-m-u">
           <label
@@ -188,9 +138,7 @@
               <option>Senior</option>
             </select>
           </label>
-          <p id="payment-info-m-u">
-            Casual swimming only allowed outside practice times.
-          </p>
+          <p id="payment-info-m-u">Casual swimming only allowed outside practice times.</p>
           <label
             >My payment method
             <select id="memberUpdatePayment">
@@ -217,14 +165,8 @@
     </dialog>
 
     <!-- Scripts -->
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
-    ></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script src="app/js/app.js" type="module"></script>
     <script src="app/js/create-member.js"></script>
     <script src="app/js/create-competitor.js"></script>

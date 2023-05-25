@@ -6,8 +6,7 @@ window.addEventListener("load", start);
 
 // end point
 
-const endpoint =
-  "https://semesterprojekt-790e8-default-rtdb.europe-west1.firebasedatabase.app";
+const endpoint = "https://semesterprojekt-790e8-default-rtdb.europe-west1.firebasedatabase.app";
 
 // prepare data
 
@@ -26,25 +25,13 @@ function prepareData(dataObject) {
 function start() {
   showTimeTable();
 
-  document
-    .querySelector("#btn-add-time")
-    .addEventListener("click", showAddTimeModal);
-  document
-    .querySelector("#form-for-time")
-    .addEventListener("submit", addTimeClicked);
-  document
-    .querySelector("#dialog-delete-time")
-    .addEventListener("submit", deleteTimeClicked);
+  document.querySelector("#btn-add-time").addEventListener("click", showAddTimeModal);
+  document.querySelector("#form-for-time").addEventListener("submit", addTimeClicked);
+  document.querySelector("#dialog-delete-time").addEventListener("submit", deleteTimeClicked);
   //filters
-  document
-    .querySelector("#btn-reset-filters")
-    .addEventListener("click", showTimeTable);
-  document
-    .querySelector("#distanceSort")
-    .addEventListener("change", selectDistance);
-  document
-    .querySelector("#disciplineSort")
-    .addEventListener("change", selectDiscipline);
+  document.querySelector("#btn-reset-filters").addEventListener("click", showTimeTable);
+  document.querySelector("#distanceSort").addEventListener("change", selectDistance);
+  document.querySelector("#disciplineSort").addEventListener("change", selectDiscipline);
   document.querySelector("#top-five").addEventListener("change", showTopFive);
 }
 
@@ -77,9 +64,7 @@ function showTime(time) {
 
   document.querySelector("#times").insertAdjacentHTML("beforeend", html);
   // delete click
-  document
-    .querySelector("#times tr:last-child #btn-delete-time")
-    .addEventListener("click", () => deleteClicked(time));
+  document.querySelector("#times tr:last-child #btn-delete-time").addEventListener("click", () => deleteClicked(time));
 }
 
 function showTimes(times) {
@@ -128,49 +113,27 @@ async function showTopFive(event) {
   if (event.target.value === "50c") {
     showTimes(await timeSort(isDistance(isDiscipline(times, "Crawl"), "50 m")));
   } else if (event.target.value === "200c") {
-    showTimes(
-      await timeSort(isDistance(isDiscipline(times, "Crawl"), "200 m"))
-    );
+    showTimes(await timeSort(isDistance(isDiscipline(times, "Crawl"), "200 m")));
   } else if (event.target.value === "1000c") {
-    showTimes(
-      await timeSort(isDistance(isDiscipline(times, "Crawl"), "1000 m"))
-    );
+    showTimes(await timeSort(isDistance(isDiscipline(times, "Crawl"), "1000 m")));
   } else if (event.target.value === "50ba") {
-    showTimes(
-      await timeSort(isDistance(isDiscipline(times, "Backstroke"), "50 m"))
-    );
+    showTimes(await timeSort(isDistance(isDiscipline(times, "Backstroke"), "50 m")));
   } else if (event.target.value === "200ba") {
-    showTimes(
-      await timeSort(isDistance(isDiscipline(times, "Backstroke"), "200 m"))
-    );
+    showTimes(await timeSort(isDistance(isDiscipline(times, "Backstroke"), "200 m")));
   } else if (event.target.value === "1000ba") {
-    showTimes(
-      await timeSort(isDistance(isDiscipline(times, "Backstroke"), "1000 m"))
-    );
+    showTimes(await timeSort(isDistance(isDiscipline(times, "Backstroke"), "1000 m")));
   } else if (event.target.value === "50br") {
-    showTimes(
-      await timeSort(isDistance(isDiscipline(times, "Breaststroke"), "50 m"))
-    );
+    showTimes(await timeSort(isDistance(isDiscipline(times, "Breaststroke"), "50 m")));
   } else if (event.target.value === "200br") {
-    showTimes(
-      await timeSort(isDistance(isDiscipline(times, "Breaststroke"), "200 m"))
-    );
+    showTimes(await timeSort(isDistance(isDiscipline(times, "Breaststroke"), "200 m")));
   } else if (event.target.value === "1000br") {
-    showTimes(
-      await timeSort(isDistance(isDiscipline(times, "Breaststroke"), "1000 m"))
-    );
+    showTimes(await timeSort(isDistance(isDiscipline(times, "Breaststroke"), "1000 m")));
   } else if (event.target.value === "50bu") {
-    showTimes(
-      await timeSort(isDistance(isDiscipline(times, "Butterfly"), "50 m"))
-    );
+    showTimes(await timeSort(isDistance(isDiscipline(times, "Butterfly"), "50 m")));
   } else if (event.target.value === "200bu") {
-    showTimes(
-      await timeSort(isDistance(isDiscipline(times, "Butterfly"), "200 m"))
-    );
+    showTimes(await timeSort(isDistance(isDiscipline(times, "Butterfly"), "200 m")));
   } else if (event.target.value === "1000bu") {
-    showTimes(
-      await timeSort(isDistance(isDiscipline(times, "Butterfly"), "1000 m"))
-    );
+    showTimes(await timeSort(isDistance(isDiscipline(times, "Butterfly"), "1000 m")));
   } else {
     console.log("failure");
   }
@@ -286,9 +249,7 @@ async function timeSort(array) {
     return secondsSortedArray;
   }
 
-  const millisecondsSortedArray = secondsSortedArray.sort(
-    (a, b) => a.milliseconds - b.milliseconds
-  );
+  const millisecondsSortedArray = secondsSortedArray.sort((a, b) => a.milliseconds - b.milliseconds);
   return millisecondsSortedArray.slice(0, 5);
 }
 

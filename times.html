@@ -29,7 +29,7 @@
             <div class="sidebar__container-top-logo">
               <img src="app/img/logo.png" alt="" class="sidebar__logo" />
             </div>
-            <button id="home" class="btn btn-sidebar">
+            <button onclick="window.location.href='home.html'" id="home" class="btn btn-sidebar">
               <ion-icon name="rocket-outline" class="btn-icon"></ion-icon>
               Home
             </button>
@@ -234,7 +234,7 @@
         </form>
     </dialog>
 
-    <!-- <footer>
+     <footer>
       <dialog id="dialog-for-time-update">
          <form id="form-for-time-update">
             <h3> Update a competitive time</h3>
@@ -273,11 +273,13 @@
               <button class="btn__style">Close</button>
             </section>
          </form>
-      </dialog> -->
+      </dialog> 
       <p>Svømmeklubben delfinen</p>
-    </footer> -->
+    </footer> 
 
-      <script src="create-time.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="app/js/create-time.js"></script>
    </body>
 </html>
 
