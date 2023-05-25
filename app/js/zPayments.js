@@ -72,7 +72,7 @@ for (let i = 0; i < mergedPayments.length; i++) {
   let priceCell = row.insertCell(2);
   let buttonCell = row.insertCell(3);
 
-  nameCell.textContent = rowData.name;
+  nameCell.textContent = rowData.firstName;
   ageCell.textContent = rowData.age;
   priceCell.textContent = rowData.price;
 
