@@ -119,3 +119,29 @@ td {
   color: white;
   background-color: var(--main-clr);
 }
+
+#dialog-for-time {
+  position: absolute;
+  top: 200px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: rgb(0, 0, 0);
+  font-family: "Poppins", sans-serif;
+  border-radius: 10px;
+}
+
+#form-for-time {
+  padding: 20px 30px;
+  background-color: #e0e0e0;
+  border-radius: 10px;
+}
+
+#dialog-delete-time {
+  position: absolute;
+  top: 200px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: rgb(0, 0, 0);
+  font-family: "Poppins", sans-serif;
+  border-radius: 10px;
+}
