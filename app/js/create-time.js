@@ -57,7 +57,7 @@ function showTime(time) {
          <th width="16.6%">${time.distance}</th>
          <th width="16.6%">${time.discipline}</th>
          ${showCompetitiveTime(time)}
-         <th width="16.6%"><button id="btn-delete-time" class="btn__style">Delete</button></th>
+         <th width="16.6%"><button id="btn-delete-time" class="btn__style-delete">Delete</button></th>
         </tr>
     </table>
     `;

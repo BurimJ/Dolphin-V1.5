@@ -11,3 +11,41 @@
   /* margin-bottom: 2rem; */
   border-radius: 1rem;
 }
+
+#dialog-for-competitor {
+  position: absolute;
+  top: 200px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: rgb(0, 0, 0);
+  font-family: "Poppins", sans-serif;
+  border-radius: 10px;
+}
+
+#form-for-competitor {
+  padding: 20px 30px;
+  background-color: #e0e0e0;
+  border-radius: 10px;
+}
+
+#dialog-update-competitor {
+  position: absolute;
+  top: 200px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: rgb(0, 0, 0);
+  background-color: #e0e0e0;
+  padding: 20px 30px;
+  border-radius: 10px;
+  font-family: "Poppins", sans-serif;
+}
+
+#dialog-delete-competitor {
+  position: absolute;
+  top: 200px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: rgb(0, 0, 0);
+  font-family: "Poppins", sans-serif;
+  border-radius: 10px;
+}
