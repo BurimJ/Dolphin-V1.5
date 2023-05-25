@@ -64,7 +64,7 @@ function showTime(time) {
 
   document.querySelector("#times").insertAdjacentHTML("beforeend", html);
   // delete click
-  document.querySelector("#times tr:last-child #btn-delete-time").addEventListener("click", () => deleteClicked(time));
+  document.querySelector("#times table:last-child #btn-delete-time").addEventListener("click", () => deleteClicked(time));
 }
 
 function showTimes(times) {
