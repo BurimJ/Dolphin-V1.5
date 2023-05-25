@@ -4,8 +4,7 @@ window.addEventListener("load", start);
 
 // end point
 
-const endpoint =
-  "https://semesterprojekt-790e8-default-rtdb.europe-west1.firebasedatabase.app";
+const endpoint = "https://semesterprojekt-790e8-default-rtdb.europe-west1.firebasedatabase.app";
 
 function prepareData(dataObject) {
   const array = [];
@@ -20,18 +19,10 @@ function prepareData(dataObject) {
 function start() {
   showCompetitorGrid();
 
-  document
-    .querySelector("#btn__add-competitor")
-    .addEventListener("click", showAddCompetitorDialog);
-  document
-    .querySelector("#form-for-competitor")
-    .addEventListener("submit", addCompetitorClicked);
-  document
-    .querySelector("#dialog-delete-competitor")
-    .addEventListener("submit", deleteClicked);
-  document
-    .querySelector("#form-update-competitor")
-    .addEventListener("submit", updateClicked);
+  document.querySelector("#btn__add-competitor").addEventListener("click", showAddCompetitorDialog);
+  document.querySelector("#form-for-competitor").addEventListener("submit", addCompetitorClicked);
+  document.querySelector("#dialog-delete-competitor").addEventListener("submit", deleteClicked);
+  document.querySelector("#form-update-competitor").addEventListener("submit", updateClicked);
 }
 
 let competitors;
@@ -54,8 +45,8 @@ function showCompetitor(competitor) {
             <p>Distance: ${competitor.myDistance}<p>
              ${assignCoach()}
 
-            <button id="btn-update-competitor" class="btn__style">Update competitor</button>
-            <button id="btn-delete-competitor" class="btn__style">Delete competitor</button>
+            <button id="btn-update-competitor" class="btn">Update competitor</button>
+            <button id="btn-delete-competitor" class="btn">Delete competitor</button>
         </article>
     `;
   function assignCoach() {
@@ -71,12 +62,8 @@ function showCompetitor(competitor) {
   document.querySelector("#competitors").insertAdjacentHTML("beforeend", html);
 
   //event listeners to btns
-  document
-    .querySelector("#competitors article:last-child #btn-update-competitor")
-    .addEventListener("click", () => updateCompetitorClicked(competitor));
-  document
-    .querySelector("#competitors article:last-child #btn-delete-competitor")
-    .addEventListener("click", () => deleteCompetitorClicked(competitor));
+  document.querySelector("#competitors article:last-child #btn-update-competitor").addEventListener("click", () => updateCompetitorClicked(competitor));
+  document.querySelector("#competitors article:last-child #btn-delete-competitor").addEventListener("click", () => deleteCompetitorClicked(competitor));
 }
 
 function showCompetitors(competitors) {

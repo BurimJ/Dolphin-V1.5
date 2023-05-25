@@ -73,3 +73,11 @@ td {
   justify-content: center;
   align-items: center;
 }
+
+.green-row {
+  background-color: rgb(136, 197, 136);
+}
+
+.red-row {
+  background-color: rgb(199, 120, 120);
+}
