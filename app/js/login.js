@@ -16,7 +16,7 @@ function loginCheck() {
   let inputValueE = document.getElementById("loginEmail").value;
   let inputValueP = document.getElementById("loginPassword").value;
 
-  if (inputValueE === "one" && inputValueP === "one") {
+  if (inputValueE === "one@mail" && inputValueP === "one") {
     loginComplete();
   } else {
     console.log("Error");
