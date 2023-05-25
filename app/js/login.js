@@ -1,11 +1,6 @@
 "use strict";
 console.log("page loading");
 
-let buttonCheck = document.getElementById("buttonLogin");
-buttonCheck.addEventListener("click", function () {
-  console.log("TEST");
-});
-
 window.addEventListener("load", func);
 
 function func() {
@@ -16,7 +11,7 @@ function loginCheck() {
   let inputValueE = document.getElementById("loginEmail").value;
   let inputValueP = document.getElementById("loginPassword").value;
 
-  if (inputValueE === "one@mail" && inputValueP === "one") {
+  if (inputValueE === "one" && inputValueP === "one") {
     loginComplete();
   } else {
     console.log("Error");
