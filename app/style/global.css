@@ -54,6 +54,11 @@ h3 {
   font-size: 0.8rem;
 }
 
+.btn-competitors {
+  margin-top: 1rem;
+  width: 150px;
+  font-size: 0.8rem;
+}
 /* ! EXTRAS */
 .zero {
   opacity: 0;

@@ -43,6 +43,7 @@ function showMember(member) {
             <p>Last Name: ${member.class}<p>
             <p>Age: ${member.age}<p>
             <p>Team: ${member.myTeam}<p>
+            <p></p>
             <button id="btn-update-member" class="btn btn-members">Update Member</button>
             <button id="btn-delete-member" class="btn btn-members">Delete Member</button>
         </article>

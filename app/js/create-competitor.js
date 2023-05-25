@@ -45,8 +45,8 @@ function showCompetitor(competitor) {
             <p>Distance: ${competitor.myDistance}<p>
              ${assignCoach()}
 
-            <button id="btn-update-competitor" class="btn">Update competitor</button>
-            <button id="btn-delete-competitor" class="btn">Delete competitor</button>
+            <button id="btn-update-competitor" class="btn btn-competitors">Update competitor</button>
+            <button id="btn-delete-competitor" class="btn btn-competitors">Delete competitor</button>
         </article>
     `;
   function assignCoach() {
