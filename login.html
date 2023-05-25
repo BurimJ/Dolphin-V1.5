@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="app/style/global.css" />
+    <link rel="stylesheet" href="app/style/login.css" />
+    <link rel="stylesheet" href="app/style/home.css" />
+    <link rel="stylesheet" href="app/style/members.css" />
+    <link rel="stylesheet" href="app/style/competitors.css" />
+    <link rel="icon" href="app/img/logo.png" />
+    <title>Login</title>
+  </head>
+  <body>
+    <!-- <dialog open id="loginForm">
+      <h1>Login</h1>
+      <label for="email">Email:</label>
+      <input type="email" id="loginEmail" required />
+      <label for="password">Password:</label>
+      <input type="password" id="loginPassword" required />
+      <button id="buttonLogin" type="submit">Submit</button>
+      <div id="loginError" style="display: none"></div>
+    </dialog>
+    <script src="app/js/login.js"></script> -->
+
+    <div class="login">
+      <div class="login__container">
+        <h2 class="login__container-title">
+          Welcome to <br />
+          Dolphin's Vault
+        </h2>
+        <form action="#" id="loginForm" class="login__container-form">
+          <input
+            type="email"
+            placeholder="Enter your email"
+            id="loginEmail"
+            class="login__container-form-input"
+            required
+          />
+          <input
+            type="password"
+            placeholder="Enter your password"
+            id="loginPassword"
+            class="login__container-form-input"
+            required
+          />
+          <button type="submit" id="buttonLogin" class="btn login-btn">
+            Login
+          </button>
+        </form>
+      </div>
+
+      <div class="login__img">
+        <img src="app/img//login-background-2.svg" alt="background-img" />
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="/app/js/login.js"></script>
+  </body>
+</html>

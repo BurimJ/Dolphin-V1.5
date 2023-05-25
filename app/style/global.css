@@ -1,0 +1,60 @@
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body,
+input,
+textarea,
+button {
+  font-family: var(--font-family);
+  color: var(--dark-clr);
+}
+
+main {
+  width: 1500px;
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+}
+
+h1,
+h2,
+h3 {
+  font-size: var(--font-size-big);
+}
+
+/* Button */
+.btn {
+  cursor: pointer;
+  font-size: var(--font-size-small);
+  border: 2px solid var(--light-clr);
+  border-radius: 10px;
+  width: 200px;
+  height: 50px;
+  color: white;
+  background-color: var(--main-clr);
+}
+
+.btn:hover {
+  background-color: var(--second-clr);
+}
+
+.btn-members {
+  margin-top: 1rem;
+  width: 150px;
+  font-size: 0.8rem;
+}
+
+/* ! EXTRAS */
+.zero {
+  opacity: 0;
+}

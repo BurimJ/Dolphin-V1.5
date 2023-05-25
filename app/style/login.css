@@ -1,0 +1,69 @@
+:root {
+  --main-clr: #7938ee;
+  --main-dark-clr: #371a6e;
+  --main-light-clr: #c5b1ea;
+
+  --second-clr: #3b0e8e;
+  --dark-clr: #3f3f3f;
+  --light-clr: #b8c2c5;
+
+  /* Font */
+  --font-family: "Poppins", sans-serif;
+  --font-size-big: 3rem;
+  --font-size-medium: 1.2rem;
+  --font-size-small: 1rem;
+  --font-size-xsmall: 0.8rem;
+}
+
+/* ! Login UI */
+.login {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  overflow: hidden;
+}
+
+/* Login Form */
+.login__container {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.login__container-title {
+  padding-bottom: 2rem;
+  text-align: center;
+}
+
+.login__container-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.login__container-form-input {
+  font-size: var(--font-size-small);
+  border: 2px solid var(--light-clr);
+  border-radius: 10px;
+  width: 350px;
+  height: 55px;
+  padding-left: 15px;
+  outline: none;
+  margin-bottom: 15px;
+}
+
+.login-btn {
+  width: 350px;
+}
+
+/* Login Img */
+.login__img {
+  width: 50%;
+}
+
+.login__img img {
+  width: 1000px;
+}
