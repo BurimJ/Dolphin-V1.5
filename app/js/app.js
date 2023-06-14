@@ -52,3 +52,10 @@ async function showCompetitorGrid() {
   competitors = await getCompetitors();
   showCompetitor(competitors);
 }
+
+const toggleBtn = document.querySelector(".btn-toggle");
+const sidebarArea = document.querySelector(".sidebar");
+
+toggleBtn.addEventListener("click", () => {
+  sidebarArea.classList.toggle("toggle");
+});

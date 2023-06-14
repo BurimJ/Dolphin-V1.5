@@ -13,6 +13,11 @@
   --font-size-medium: 1.2rem;
   --font-size-small: 1rem;
   --font-size-xsmall: 0.8rem;
+
+  --tran-02: all 0.2s ease;
+  --tran-03: all 0.3s ease;
+  --tran-04: all 0.4s ease;
+  --tran-05: all 0.5s ease;
 }
 
 main {
@@ -20,11 +25,20 @@ main {
 }
 
 .sidebar {
-  width: 25%;
+  position: fixed;
+  top: 0;
+  left: 0px;
+  width: 250px;
+  height: 100%;
+  transition: all 0.3s ease;
+}
+
+.toggle {
+  left: -230px;
 }
 
 .sidebar__container {
-  height: 90vh;
+  /* height: 100vh; */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -33,20 +47,29 @@ main {
 
 .sidebar__container ion-icon {
   font-size: var(--font-size-medium);
-  padding-right: 10px;
-}
-
-.sidebar__container-top {
-}
-
-.sidebar__container-bottom {
+  /* padding-right: 10px; */
 }
 
 .sidebar__container-top-logo {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
   width: 200px;
+}
+
+.sidebar__container-top-logo ion-icon {
+  position: absolute;
+  top: 20px;
+  left: 250px;
+  padding: 5px;
+  width: 20px;
+  height: 20px;
+  background-color: #6549e7;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
 }
 
 .sidebar__container-top-logo img {
@@ -127,6 +150,11 @@ main {
   border-radius: 50%;
   width: 40px;
   height: 40px;
+}
+
+.wrapper {
+  position: absolute;
+  margin-left: 250px;
 }
 
 /* Cards */
